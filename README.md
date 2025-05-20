@@ -16,6 +16,14 @@ It is based on the volatility risk premium and mean-reversion approach outlined 
 ---
 
 ## Folder Structure
+<pre>
+trading-bot/
+├── README.md                # Project overview and documentation
+├── backtest.py              # Main backtest runner
+├── data/                    # CSVs and market data
+├── strategies/              # Custom strategy logic (mean reversion, etc.)
+└── utils/                   # Indicators, tools (regression, Bollinger, etc.)
+</pre>
 
 ---
 
@@ -36,14 +44,12 @@ It is based on the volatility risk premium and mean-reversion approach outlined 
 - [ ] Load real futures data
 - [ ] Implement strategy logic
 - [ ] Backtest full pipeline
-- [ ] Optional: Auto-trade integration (IBKR)
+- [ ] Auto-trade integration (IBKR)
 
 ---
 
 ## Author
 
 Nicholas Hong | Built for educational and research purposes. Not financial advice.
-git add README.md
-git commit -m "Add project README overview"
-git push
+
 
