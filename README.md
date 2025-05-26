@@ -1,55 +1,60 @@
-# Futures Options Strategy Backtester
+# Trading Bot: Mean Reversion Strategy (Spot vs Futures)
 
-This project is a Python-based backtesting engine for a directional options strategy on forex futures.  
-It is based on the volatility risk premium and mean-reversion approach outlined in a private strategy document.
+This project explores a **mean-reversion trading strategy** applied to:
 
----
+- 📈 **Spot EUR/USD** (from IBKR)
+- 📉 **6E Futures** (continuous front-month, from proxy CSV)
 
-## Strategy Logic (Summary)
-
-- Use **regression slope** to determine trend direction
-- Use **Bollinger Bands** to detect overbought/oversold zones
-- Enter **bear put spread** at lower band on uptrend
-- Enter **bull call spread** at upper band on downtrend
-- Track cumulative P&L and simulate realistic spreads (coming soon)
+We compare performance across both markets using a consistent strategy framework.
 
 ---
 
-## Folder Structure
-<pre>
-trading-bot/
-├── README.md                # Project overview and documentation
-├── backtest.py              # Main backtest runner
-├── data/                    # CSVs and market data
-├── strategies/              # Custom strategy logic (mean reversion, etc.)
-└── utils/                   # Indicators, tools (regression, Bollinger, etc.)
-</pre>
+## 🧠 Strategy Overview
+
+- Uses **Bollinger Bands** and **slope regression**
+- Generates signals:
+  - 🔴 **Short** when price > upper band and slope < 0
+  - 🟢 **Long** when price < lower band and slope > 0
 
 ---
 
-## Tech Stack
+## 🔍 Key Features
 
-- Python (3.8+)
-- Pandas / NumPy / Matplotlib
-- yFinance (for quick data), IBKR / Databento later
-- Git + GitHub (SSH enabled)
-
----
-
-## Status
-
-- [x] Project initialized
-- [x] SSH + GitHub working
-- [x] Dummy backtest engine running
-- [ ] Load real futures data
-- [ ] Implement strategy logic
-- [ ] Backtest full pipeline
-- [ ] Auto-trade integration (IBKR)
+- 20 years of backtested data (spot & futures)
+- Visualizations: signal chart + equity curve
+- Performance metrics:
+  - Total Return
+  - CAGR
+  - Sharpe Ratio
+  - Max Drawdown
 
 ---
 
-## Author
+## 📊 Sample Output
 
-Nicholas Hong | Built for educational and research purposes. Not financial advice.
+| Pair         | Total Return | CAGR   | Sharpe | Max Drawdown |
+|--------------|--------------|--------|--------|---------------|
+| EUR/USD Spot | -8.72%       | -0.46% | -0.29  | 15.44%        |
+| 6E Futures   | 0.32%        | 0.02%  | 0.04   | 1.69%         |
 
+---
 
+## 📁 Project Structure
+
+```bash
+├── data/                       # Historical CSVs
+├── utils/                     # Backtest engine + indicators
+├── strategies/                # Mean reversion logic
+├── backtest.py                # CLI runner
+├── spot_vs_futures_strategy_analysis.ipynb  # Notebook visualization
+├── fetch_6e_proxy.py          # External fetcher for 6E data
+```
+
+---
+
+## ✅ Next Steps
+
+- Improve position sizing and capital allocation
+- Introduce volatility filters (e.g. ATR)
+- Test other FX and futures pairs (JPY, GBP, AUD, etc.)
+- Apply to intraday bars or resample hourly data
