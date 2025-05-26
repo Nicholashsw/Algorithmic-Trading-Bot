@@ -58,3 +58,9 @@ We compare performance across both markets using a consistent strategy framework
 - Introduce volatility filters (e.g. ATR)
 - Test other FX and futures pairs (JPY, GBP, AUD, etc.)
 - Apply to intraday bars or resample hourly data
+
+## Author
+
+Nicholas Hong | Built for educational and research purposes. Not financial advice.
+
+
