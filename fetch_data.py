@@ -1,16 +1,16 @@
-import yfinance as yf
-import os
+from ib_insync import *
+import pandas as pd
 
-# Create data folder if it doesn't exist
-os.makedirs("data", exist_ok=True)
+ib = IB()
+ib.connect('127.0.0.1', 7497, clientId=1)
 
-# Symbol for EUR/USD Futures
-symbol = "6E=F"
+# EUR/USD spot FX contract
+contract = Forex('EURUSD')
 
-# Download daily data
-df = yf.download(symbol, start="2018-01-01", end="2024-01-01", interval="1d")
-
-# Save to CSV
-df.to_csv("data/6E.csv")
-
-print("✅ EUR/USD Futures saved to data/6E.csv")
+# Request 20 years of daily bars
+bars = ib.reqHistoricalData(
+    contract,
+    endDateTime='',
+    durationStr='20 Y',          # ✅ Up to 20 years
+    barSizeSetting='1 day',
+    whatToShow='MIDPOINT',       # Use 'MIDPOINT' or 'TRADES'
