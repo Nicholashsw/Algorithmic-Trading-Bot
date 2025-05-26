@@ -63,4 +63,10 @@ We compare performance across both markets using a consistent strategy framework
 
 Nicholas Hong | Built for educational and research purposes. Not financial advice.
 
+---
+
+### Acknowledgments
+
+Special thanks to **Jirong Huang**, Quantitative Portfolio Manager at Eastspring Investments, for his guidance and mentorship throughout the development of this strategy. His insights into FX markets and options structuring were instrumental in shaping the project.
+
 
