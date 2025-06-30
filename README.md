@@ -1,4 +1,4 @@
-# 📘 Volatility Risk Premium & Risk Filter in Futures Options Strategy
+# Volatility Risk Premium & Risk Filter in Futures Options Strategy
 
 This repository explores a **multi-market trading strategy** that combines:
 - Mean-reversion signals from **Bollinger Bands + slope**
@@ -12,15 +12,15 @@ Designed and built for educational and research purposes by Nicholas Hong.
 ## 🔍 Project Focus
 This project studies how systematic mean-reverting signals can be used to trade FX via:
 
-- ✅ **Spot**: Direct exposure to FX prices (e.g., EUR/USD)
-- ✅ **Futures**: 6E contract (Euro FX Futures)
-- ✅ **Options**: Directional spreads exploiting VRP (bull call / bear put)
+- **Spot**: Direct exposure to FX prices (e.g., EUR/USD)
+- **Futures**: 6E contract (Euro FX Futures)
+- **Options**: Directional spreads exploiting VRP (bull call / bear put)
 
 Backtests cover **20+ years** of EUR/USD and 6E price history. A later extension includes USD/JPY.
 
 ---
 
-## 🧠 Strategy Logic
+## Strategy Logic
 
 ### Mean-Reversion Signal
 - Compute **regression slope** over short window to capture local trend
@@ -70,7 +70,7 @@ trading-bot/
 
 ---
 
-## 📊 Key Results
+## Key Results
 
 ### EUR/USD (Spot)
 - Sharpe Ratio: ~0.24
@@ -93,7 +93,7 @@ trading-bot/
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
 - Python 3.12+
 - Pandas / NumPy / Matplotlib / Seaborn
@@ -103,7 +103,7 @@ trading-bot/
 
 ---
 
-## ✅ Status & Milestones
+## Status & Milestones
 
 - [x] Fetch 20 years of EUR/USD and 6E data
 - [x] Build modular backtest engine
@@ -117,7 +117,7 @@ trading-bot/
 ---
 
 
-## 📣 Author
+## Author
 **Nicholas Hong**  
 Built for educational and research purposes. Not financial advice.
 
