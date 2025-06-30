@@ -9,7 +9,7 @@ Designed and built for educational and research purposes by Nicholas Hong.
 
 ---
 
-## 🔍 Project Focus
+## Project Focus
 This project studies how systematic mean-reverting signals can be used to trade FX via:
 
 - **Spot**: Direct exposure to FX prices (e.g., EUR/USD)
@@ -38,7 +38,7 @@ Backtests cover **20+ years** of EUR/USD and 6E price history. A later extension
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```plaintext
 trading-bot/
