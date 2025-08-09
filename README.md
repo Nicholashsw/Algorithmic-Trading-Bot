@@ -34,7 +34,7 @@ This project explores how price signals can be structured into options spread st
 
 - **Spot FX** → IBKR API (via `ib_insync`)
 - **Futures Prices** → Bloomberg Terminal, CME data
-- **Options Chains** → Bloomberg (strike, bid/ask, IV, DTE, risk-free rate), Databento ($125 credit for SPY & GLD), CBOE (pending)
+- **Options Chains** → Bloomberg (strike, bid/ask, IV, DTE, risk-free rate), Databento, CBOE 
 - **Greeks** → Calculated via Black-76 / Black-Scholes
 
 ---
