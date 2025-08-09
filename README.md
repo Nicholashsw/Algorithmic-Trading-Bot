@@ -2,8 +2,6 @@
 
 A systematic FX & commodity options strategy designed to combine **mean-reversion** and **trend-following** signals with **volatility risk premium harvesting**, tested across **spot FX**, **currency futures**, and **gold futures**.
 
-Built for **educational and research purposes** by **Nicholas Hong**.
-
 ---
 
 ### **Strategy Overview**
