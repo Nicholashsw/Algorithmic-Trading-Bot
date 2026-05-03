@@ -1,1 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Data (large files — store separately)
+data/*.csv
+data/backups/
+
+# Results (generated — not tracked)
+# results/   # Uncomment if you want to exclude results too
+
+# macOS
 .DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Secrets
+*.env
