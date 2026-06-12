@@ -164,4 +164,3 @@ jupyter notebook vrp_strategy_analysis_v2.ipynb
 **Nicholas Hong** | NTU Singapore
 Built for research and educational purposes. Not financial advice.
 
-**Acknowledgments**: Jirong Huang, Quantitative Portfolio Manager at Eastspring Investments.
